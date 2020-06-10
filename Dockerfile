@@ -30,6 +30,8 @@ RUN set -ex \
   bash \
   freetype \
   freetype-dev \
+  gmp \
+  gmp-dev \
   gnupg \
   icu-dev \
   icu-libs \
