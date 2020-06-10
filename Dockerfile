@@ -42,7 +42,7 @@ RUN set -ex \
   libmcrypt-dev \
   libmemcached \
   libmemcached-dev \
-  libonig-dev \
+  oniguruma-dev \
   libpng \
   libpng-dev \
   libzip \
