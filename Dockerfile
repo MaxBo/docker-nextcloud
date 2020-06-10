@@ -62,7 +62,7 @@ RUN set -ex \
   wget \
 # PHP Extensions
 # https://docs.nextcloud.com/server/9/admin_manual/installation/source_installation.html
-  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+  && docker-php-ext-configure gd --with-freetype=/usr --with-jpeg=/usr \
   && docker-php-ext-configure ldap \
   && docker-php-ext-configure zip --with-libzip=/usr \
   && docker-php-ext-install gd exif intl mbstring ldap mysqli opcache pcntl pdo_mysql pdo_pgsql pgsql zip bcmath gmp \
