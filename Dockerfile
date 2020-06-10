@@ -35,6 +35,7 @@ RUN set -ex \
   icu-libs \
   imagemagick \
   imagemagick-dev \
+  libgmp-dev \
   libjpeg-turbo \
   libjpeg-turbo-dev \
   libldap \
