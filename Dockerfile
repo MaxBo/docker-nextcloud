@@ -66,11 +66,11 @@ RUN set -ex \
   && docker-php-ext-configure ldap \
   && docker-php-ext-configure zip --with-libzip=/usr \
   && docker-php-ext-install gd exif intl mbstring ldap mysqli opcache pcntl pdo_mysql pdo_pgsql pgsql zip bcmath gmp \
-  && pecl install APCu-5.1.16 \
-  && pecl install imagick-3.4.3 \
-  && pecl install mcrypt-1.0.2 \
-  && pecl install memcached-3.1.3 \
-  && pecl install redis-4.2.0 \
+  && pecl install APCu-5.1.18 \
+  && pecl install imagick-3.4.4 \
+  && pecl install mcrypt-1.0.3 \
+  && pecl install memcached-3.1.5 \
+  && pecl install redis-5.2.2 \
   && docker-php-ext-enable apcu imagick mcrypt memcached redis \
 # Remove dev packages
   && apk del \
