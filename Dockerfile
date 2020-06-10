@@ -108,7 +108,9 @@ RUN set -ex \
   && tar xjf ${NEXTCLOUD_TARBALL} --strip-components=1 -C /opt/nextcloud \
 # Remove nextcloud updater for safety
   && rm -rf /opt/nextcloud/updater \
-  && rm -rf /tmp/* /root/.gnupg \
+  && rm -rf /tmp/* \
+  && rm -rf /root/.gnupg/* \
+  && rm -rf /root/.gnupg \
 # Wipe excess directories
   && rm -rf /var/www/*
 
